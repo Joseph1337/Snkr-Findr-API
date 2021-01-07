@@ -34,27 +34,6 @@ api.add_resource(sneakerById, '/sneakers/<string:query_id>')
 api.add_resource(sneakerPrice, '/sneakers/<string:query_id>/sizes')
 api.add_resource(sneakerBySearch, '/sneakers/search/<string:keyword>')
 
-# Home page
-# @app.route('/')
-# def home():
-#      return redirect(url_for('get_all_shoes'))
 
-# @app.route('/shoes/')
-# def get_all_shoes():
-#      return jsonify(goat_scraperV3.getAllSneakers())
-#     # return render_template('home.html')
-
-
-# @app.route('/shoes/<query_id>')
-# def get_shoe(query_id):
-#     body = jsonify(goat_scraperV3.setSneakerSizesAndPrices(query_id))
-#     return render_template("home.html")
-
-# def api_all():
-#     return jsonify(goat_scraperV3.getAllSneakers())
-#     # return jsonify(books)
-
-
-# If we're running in stand alone mode, run the application
 if __name__ == '__main__':
     app.run()
