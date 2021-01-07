@@ -10,9 +10,15 @@ The **SNKR TRAKR** API allows the user to obtain essential information on sneake
 - Release Date
 - Price map of each corresponding size
 
-Currently the API is only able to collect information from [GOAT](goat.com) but the goal is to obtain sneaker data from [StockX](stockx.com), [Stadium Goods](stadiumgoods.com), [Flight Club](flightclub.com) and other Foot sites.
+Currently the API is only able to collect information from [GOAT](goat.com) but the end goal is to obtain sneaker data from [StockX](https://stockx.com/), [Stadium Goods](https://www.stadiumgoods.com/), [Flight Club](https://www.flightclub.com/) and other Foot sites.
+
+##How to use:
+###1. Install Python Requests Library
+
+'pip install Requests'
 
 ##Technologies
+
 This project was made with:
 - Python
 - Flask + Flask_Restful
