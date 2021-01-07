@@ -1,17 +1,14 @@
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 from flask_restful import Api, Resource, reqparse
-
-# import requests
 import json
 import goat_scraper
 
 
 # Create the application instance   
-# app = Flask(__name__, template_folder="templates")
 app = Flask(__name__)
 api = Api(app)
 
-class popularSneakers(Resource):
+class popularSneakers(Resource): #gets top 100 sneakers from site
     def get(self, query_id=""):
         sneakers = goat_scraper.getAllSneakers()
         return jsonify(sneakers)
@@ -31,6 +28,7 @@ class sneakerBySearch(Resource):
         results = goat_scraper.getAllSneakers(keyword)
         return jsonify(results)
 
+#endpoints
 api.add_resource(popularSneakers, '/', '/sneakers/'  )
 api.add_resource(sneakerById, '/sneakers/<string:query_id>')
 api.add_resource(sneakerPrice, '/sneakers/<string:query_id>/sizes')
@@ -59,4 +57,4 @@ api.add_resource(sneakerBySearch, '/sneakers/search/<string:keyword>')
 
 # If we're running in stand alone mode, run the application
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
