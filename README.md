@@ -6,7 +6,7 @@ The ***SNKR FINDR*** API allows the user to obtain essential information on snea
 - Colorway
 - Product ID
 - Retail Price
-- Image Links
+- Image URL
 - Release Date
 - Price map of each corresponding size
 
