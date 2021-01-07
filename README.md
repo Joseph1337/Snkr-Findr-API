@@ -33,13 +33,13 @@ Now that you have the requests library installed, it's time to make some API req
 import requests
 
 #get the trending sneakers
-popularSneakers = requests.get(https://snkr-findr.herokuapp.com/sneakers)
+popularSneakers = requests.get("https://snkr-findr.herokuapp.com/sneakers")
 
 #get sneaker using product id (sneaker_id)
-sneaker = requests.get(https://snkr-findr.herokuapp.com/sneakers/<sneaker_id>
+sneaker = requests.get("https://snkr-findr.herokuapp.com/sneakers/<sneaker_id>")
 
 #get sneaker(s) using search
-searchSneaker = requests.get(https://snkr findr.herokuapp.com/sneakers/search/<keyword>
+searchSneaker = requests.get("https://snkr findr.herokuapp.com/sneakers/search/<keyword>")
 ```
 
 **Sample JSON Response**:
