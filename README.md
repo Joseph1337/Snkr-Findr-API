@@ -1,7 +1,7 @@
-# SNKR TRAKR👟
+# SNKR FINDR👟
 A REST API created for sneakerheads.
 
-The **SNKR TRAKR** API allows the user to obtain essential information on sneakers including:
+The ***SNKR FINDR*** API allows the user to obtain essential information on sneakers including:
 - Sneaker Name
 - Colorway
 - Product ID
