@@ -1,13 +1,20 @@
-# SNKR TRAKR 👟
+# SNKR TRAKR👟
 A REST API created for sneakerheads.
 
-The SNKR TRAKR API allows the user to obtain essential information on sneakers including:
+The **SNKR TRAKR** API allows the user to obtain essential information on sneakers including:
 - Sneaker Name
 - Colorway
-- SKU/Product ID
+- Product ID
 - Retail Price
 - Image Links
 - Release Date
 - Price map of each corresponding size
 
+Currently the API is only able to collect information from [GOAT](goat.com) but the goal is to obtain sneaker data from [StockX](stockx.com), [Stadium Goods](stadiumgoods.com), [Flight Club](flightclub.com) and other Foot sites.
 
+##Technologies
+This project was made with:
+- Python
+- Flask + Flask_Restful
+- Requests Library
+- Heroku
